@@ -1,23 +1,12 @@
 package com.apps.sejarah.ui.login
 
-import android.content.Intent
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import androidx.fragment.app.add
-import androidx.fragment.app.commit
-import com.apps.sejarah.MainActivity
-import com.apps.sejarah.R
 import com.apps.sejarah.databinding.ActivityLoginBinding
-import com.budiyev.android.codescanner.AutoFocusMode
-import com.budiyev.android.codescanner.CodeScanner
-import com.budiyev.android.codescanner.DecodeCallback
-import com.budiyev.android.codescanner.ErrorCallback
-import com.budiyev.android.codescanner.ScanMode
 
 
 private const val CAMERA_REQUEST_CODE = 101

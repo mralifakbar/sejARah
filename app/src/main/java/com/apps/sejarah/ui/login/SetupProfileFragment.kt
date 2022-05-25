@@ -8,8 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import com.apps.sejarah.MainActivity
-import com.apps.sejarah.R
+import com.apps.sejarah.ui.main.MainActivity
 import com.apps.sejarah.databinding.FragmentSetupProfileBinding
 
 
@@ -38,10 +37,14 @@ class SetupProfileFragment : Fragment() {
                 Toast.makeText(requireContext(), "Awww", Toast.LENGTH_SHORT).show()
                 if (name.isEmpty()) {
                     edtName.error = "Nama tidak boleh kosong"
-                } else {
+                } else if (name.length <= 2){
+                    edtName.error = "Nama terlalu pendek"
+                }
+                else {
                     val intent = Intent(requireContext(), MainActivity::class.java)
                     startActivity(intent)
                 }
+
             }
         }
     }
