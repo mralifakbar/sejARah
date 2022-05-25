@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_login"
+    app:startDestination="@id/authenticationFragment">
+
+    <fragment
+        android:id="@+id/authenticationFragment"
+        android:name="com.apps.sejarah.ui.login.AuthenticationFragment"
+        android:label="fragment_authentication"
+        tools:layout="@layout/fragment_authentication" >
+        <action
+            android:id="@+id/navigateToSetupProfileFragment"
+            app:destination="@id/setupProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/setupProfileFragment"
+        android:name="com.apps.sejarah.ui.login.SetupProfileFragment"
+        android:label="fragment_setup_profile"
+        tools:layout="@layout/fragment_setup_profile" >
+        <action
+            android:id="@+id/navigateToAuthenticationFragment"
+            app:destination="@id/authenticationFragment" />
+    </fragment>
+</navigation>
