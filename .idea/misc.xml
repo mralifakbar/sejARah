@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/CODING/sejARah/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.122" />
+        <entry key="..\:/CODING/sejARah/app/src/main/res/drawable/card_authentication.xml" value="0.306" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/drawable/gradient_drawable.xml" value="0.122" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/drawable/ic_article_filled.xml" value="0.122" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/drawable/ic_article_selector.xml" value="0.122" />
@@ -12,6 +13,7 @@
         <entry key="..\:/CODING/sejARah/app/src/main/res/drawable/ic_home_outlined.xml" value="0.122" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/drawable/ic_home_selector.xml" value="0.122" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/drawable/ic_launcher_background.xml" value="0.122" />
+        <entry key="..\:/CODING/sejARah/app/src/main/res/drawable/ic_right_arrow.xml" value="0.194" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/drawable/ic_scan_filled.xml" value="0.122" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/drawable/ic_scan_outlined.xml" value="0.122" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/drawable/ic_scan_selector.xml" value="0.122" />
@@ -20,7 +22,7 @@
         <entry key="..\:/CODING/sejARah/app/src/main/res/layout/activity_main.xml" value="0.1767983789260385" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/layout/activity_splash.xml" value="0.2" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/layout/fragment_article.xml" value="0.1" />
-        <entry key="..\:/CODING/sejARah/app/src/main/res/layout/fragment_authentication.xml" value="0.1" />
+        <entry key="..\:/CODING/sejARah/app/src/main/res/layout/fragment_authentication.xml" value="0.2" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/layout/fragment_scanner.xml" value="0.1" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/layout/fragment_setup_profile.xml" value="0.1" />

@@ -6,33 +6,90 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.login.AuthenticationFragment">
 
-    <com.budiyev.android.codescanner.CodeScannerView
-        android:id="@+id/scanner_view"
+    <com.google.android.material.card.MaterialCardView
+        style="@style/Widget.Material3.CardView.Elevated"
+        app:cardBackgroundColor="@color/white"
+        android:id="@+id/card_camera"
         android:layout_width="match_parent"
-        android:layout_height="480dp"
-        app:autoFocusButtonColor="@color/white"
-        app:autoFocusButtonVisible="true"
-        app:flashButtonColor="@color/white"
-        app:flashButtonVisible="true"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="50dp"
+        app:cardCornerRadius="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:maskColor="#1E000000"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="32dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:paddingBottom="32dp">
+
+            <com.budiyev.android.codescanner.CodeScannerView
+                android:id="@+id/scanner_view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:autoFocusButtonColor="@color/white"
+                app:autoFocusButtonVisible="true"
+                app:flashButtonColor="@color/white"
+                app:flashButtonVisible="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:maskColor="#1E000000"/>
+
+            <TextView
+                android:id="@+id/tv_scan_qr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/scanner_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="Scan QR untuk Masuk"
+                android:textSize="26dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginTop="13dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tv_scan_qr"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="Arahkan kamera ke kartu akses "
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
 
     <TextView
-        android:id="@+id/tv_scan_result"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/scanner_view"
+        android:text="Belum memiliki kartunya?"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textAlignment="center"/>
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_demo_skip"
+        android:layout_marginBottom="7dp"/>
 
     <Button
         android:id="@+id/btn_demo_skip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SKIP DULU"
+        android:text="Beli Sekarang"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:paddingVertical="16dp"
+        app:icon="@drawable/ic_right_arrow"
+        app:iconGravity="textEnd"
+        app:iconSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

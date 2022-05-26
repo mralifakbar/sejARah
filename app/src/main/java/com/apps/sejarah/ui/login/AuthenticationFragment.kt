@@ -67,7 +67,7 @@ class AuthenticationFragment : Fragment() {
                 activity?.runOnUiThread {
                     Log.e("MainActivity", result.text.toString())
                     Log.e("MainActivity", result.text.toString())
-                    binding.tvScanResult.text = result.text
+//                    binding.tvScanResult.text = result.text
                     if (result.text.equals("g*39Jfgaj(5Jdfhpifa#389aFJ0j*3OiJfi(jfd2*bm(30+2)#pf*#f9jfl")) {
                         Navigation.findNavController(
                             requireActivity(),
