@@ -7,6 +7,7 @@
         <entry key="..\:/CODING/sejARah/app/src/main/res/drawable/card_authentication.xml" value="0.306" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/drawable/gradient_drawable.xml" value="0.122" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/drawable/ic_article_filled.xml" value="0.122" />
+        <entry key="..\:/CODING/sejARah/app/src/main/res/drawable/ic_article_outlined.xml" value="0.306" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/drawable/ic_article_selector.xml" value="0.122" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/drawable/ic_downhill_skiing.xml" value="0.122" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/drawable/ic_home_filled.xml" value="0.122" />
@@ -17,6 +18,7 @@
         <entry key="..\:/CODING/sejARah/app/src/main/res/drawable/ic_scan_filled.xml" value="0.122" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/drawable/ic_scan_outlined.xml" value="0.122" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/drawable/ic_scan_selector.xml" value="0.122" />
+        <entry key="..\:/CODING/sejARah/app/src/main/res/drawable/ic_winner.xml" value="0.306" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/drawable/nav_background_curved.xml" value="0.122" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/layout/activity_main.xml" value="0.1767983789260385" />
@@ -25,7 +27,7 @@
         <entry key="..\:/CODING/sejARah/app/src/main/res/layout/fragment_authentication.xml" value="0.2" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/layout/fragment_scanner.xml" value="0.1" />
-        <entry key="..\:/CODING/sejARah/app/src/main/res/layout/fragment_setup_profile.xml" value="0.1" />
+        <entry key="..\:/CODING/sejARah/app/src/main/res/layout/fragment_setup_profile.xml" value="0.33" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/layout/rv_article.xml" value="0.1" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
         <entry key="..\:/CODING/sejARah/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.122" />

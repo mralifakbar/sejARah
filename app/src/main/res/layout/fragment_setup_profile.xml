@@ -4,41 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.login.SetupProfileFragment">
+    tools:context=".ui.login.SetupProfileFragment"
+    android:padding="16dp">
 
     <ImageView
-        android:id="@+id/iv_user_picture"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
         app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/logo_with_text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:src="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
-    <EditText
-        android:id="@+id/edt_name"
+    <ImageView
+        android:id="@+id/winner"
+        android:layout_width="wrap_content"
+        android:layout_height="270dp"
+        android:src="@drawable/ic_winner"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/selamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Selamat Anda Berhasil Masuk!"
+        android:layout_marginTop="16dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_500"
+        app:layout_constraintTop_toBottomOf="@id/winner"/>
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:id="@+id/isi_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silakan isi nama Anda dibawah untuk lanjut"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/selamat"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_name"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:hint="Nama Anda"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Nama Lengkap"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_user_picture" />
+        app:layout_constraintTop_toBottomOf="@id/isi_nama">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <Button
         android:id="@+id/btn_next"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
         android:text="Lanjut"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:textSize="22dp"
+        android:paddingVertical="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_name" />
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
