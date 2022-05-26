@@ -9,6 +9,7 @@ import com.apps.sejarah.data.entity.ArticleEntity
     version = 1,
     exportSchema = false
 )
+
 abstract class SejarahDatabase: RoomDatabase() {
     abstract fun sejarahDao(): SejarahDao
 }

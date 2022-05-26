@@ -3,24 +3,30 @@
     package="com.apps.sejarah">
 
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".di.BaseApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_icon"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SejARah">
         <activity
-            android:name=".ui.login.LoginActivity"
-            android:exported="true">
+            android:name=".ui.splash.Splash"
+            android:exported="true"
+            android:theme="@style/ThemeWhiteBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="true"
+            android:theme="@style/ThemeWhiteBar"/>
         <activity
             android:name=".ui.main.MainActivity"
             android:exported="true" />
