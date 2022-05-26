@@ -5,4 +5,5 @@
     <string name="home">Home</string>
     <string name="scanner">Scanner</string>
     <string name="article">Article</string>
+    <string name="dummy_article_title">Dummy Article Title</string>
 </resources>
