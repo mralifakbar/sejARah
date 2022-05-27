@@ -21,6 +21,7 @@
         app:menu="@menu/bottom_nav_menu"
         app:labelVisibilityMode="unlabeled"
         app:itemIconTint="@color/primary_500"
+        app:itemIconSize="32dp"
         app:elevation="1dp"/>
 
     <fragment

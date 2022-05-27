@@ -2,7 +2,7 @@
 <resources>
     <color name="primary_500">#F05454</color>
     <color name="navy">#30475E</color>
-    <color name="grey">#DDDDDD</color>
+    <color name="grey">#EAEAEA</color>
     <color name="shadow">#7799B0</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>

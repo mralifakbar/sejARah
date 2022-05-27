@@ -41,12 +41,12 @@ class AuthenticationFragment : Fragment() {
 
         setupCodeScanner()
 
-        binding.btnDemoSkip.setOnClickListener {
+        binding.btnBuyNow.setOnClickListener {
             Navigation.findNavController(
                 requireActivity(),
                 R.id.nav_host_fragment_container_login
             ).navigate(R.id.navigateToSetupProfileFragment)
-            Toast.makeText(requireContext(), "Ouch", Toast.LENGTH_SHORT).show()
+//            Toast.makeText(requireContext(), "Ouch", Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -58,7 +58,7 @@ class AuthenticationFragment : Fragment() {
             formats = CodeScanner.ALL_FORMATS
 
             autoFocusMode = AutoFocusMode.SAFE // autofocus at fixed intervals
-            scanMode = ScanMode.CONTINUOUS // continuously try to scan and find the barcode
+            scanMode = ScanMode.SINGLE // single try to scan and find the barcode
 
             isAutoFocusEnabled = true
             isFlashEnabled = false
@@ -67,7 +67,6 @@ class AuthenticationFragment : Fragment() {
                 activity?.runOnUiThread {
                     Log.e("MainActivity", result.text.toString())
                     Log.e("MainActivity", result.text.toString())
-//                    binding.tvScanResult.text = result.text
                     if (result.text.equals("g*39Jfgaj(5Jdfhpifa#389aFJ0j*3OiJfi(jfd2*bm(30+2)#pf*#f9jfl")) {
                         Navigation.findNavController(
                             requireActivity(),

@@ -47,6 +47,9 @@ object DummyData {
                 imageUrl = "https://akcdn.detik.net.id/visual/2020/12/10/zona-rupadhatu-candi-borobudur_169.jpeg?w=650"
             )
         )
+
+
+
         return articles
     }
 }

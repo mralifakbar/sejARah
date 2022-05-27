@@ -20,11 +20,10 @@ class ArticleAdapter: RecyclerView.Adapter<ArticleAdapter.ArticleViewHolder>() {
                 tvArticleTitle.text = article.title
                 Glide.with(itemView.context)
                     .load(article.imageUrl)
-                    .circleCrop()
                     .into(ivArticlePicture)
             }
             itemView.setOnClickListener {
-                Toast.makeText(itemView.context, "iww", Toast.LENGTH_SHORT).show()
+//                Toast.makeText(itemView.context, "iww", Toast.LENGTH_SHORT).show()
 //                val moveToDetail = Intent(itemView.context, DetailActivity::class.java)
 //                moveToDetail.putExtra(DetailActivity.EXTRA_ENTITY, article)
 //                itemView.context.startActivity(moveToDetail)

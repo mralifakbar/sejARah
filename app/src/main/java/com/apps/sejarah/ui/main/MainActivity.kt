@@ -22,6 +22,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val name = intent.getStringExtra(EXTRA_NAME)
+
+        val bundle = Bundle()
+        bundle.putString("EXTRA_NAME", name);
+
         val navView: BottomNavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
         val appBarConfiguration = AppBarConfiguration(
@@ -34,5 +39,9 @@ class MainActivity : AppCompatActivity() {
 
 //        setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+    }
+
+    companion object{
+        val EXTRA_NAME = "extra_name"
     }
 }
